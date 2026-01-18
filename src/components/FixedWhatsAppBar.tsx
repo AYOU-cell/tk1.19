@@ -1,0 +1,29 @@
+import { useLanguage } from '../contexts/LanguageContext';
+import { LanguageSwitcher } from './LanguageSwitcher';
+
+export function FixedWhatsAppBar() {
+  const { t } = useLanguage();
+  
+  return (
+    <div className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: '#1A73E8' }}>
+      <div className="max-w-md mx-auto px-5 py-3">
+        <div className="flex items-center justify-between gap-3">
+          {/* Left: Title */}
+          <div className="text-white text-sm font-medium flex-shrink-0">
+            {t('whatsapp.title')}
+          </div>
+          
+          {/* Right: Language Switcher */}
+          <div className="flex-shrink-0">
+            <LanguageSwitcher />
+          </div>
+        </div>
+        
+        {/* WhatsApp CTA Button */}
+        <div className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-3 px-6 rounded-xl shadow-md mt-3">
+          <span className="font-medium">WhatsApp ID：+1(810)537-1355</span>
+        </div>
+      </div>
+    </div>
+  );
+}
