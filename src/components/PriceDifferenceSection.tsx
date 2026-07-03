@@ -76,7 +76,7 @@ export function PriceDifferenceSection() {
           {t('price.profit.note')}
         </p>
 
-{/* WhatsApp CTA Button */}
+        {/* WhatsApp CTA Button */}
         <div>
           <a
             href="https://wa.me/85255945272"
@@ -88,6 +88,7 @@ export function PriceDifferenceSection() {
             <span className="text-xl">WhatsApp ID: +852 5594 5272</span>
           </a>
         </div>
+      </div> {/* ← 补上了原本缺失的这个关键 div 闭合标签 */}
         
       {/* Zoomed Image Modal */}
       {zoomedImage && (
