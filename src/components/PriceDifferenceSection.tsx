@@ -76,15 +76,19 @@ export function PriceDifferenceSection() {
           {t('price.profit.note')}
         </p>
 
-        {/* WhatsApp CTA Button */}
+{/* WhatsApp CTA Button */}
         <div>
-          <div className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-5 px-8 rounded-2xl shadow-xl">
+          <a
+            href="https://wa.me/85255945272"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-5 px-8 rounded-2xl shadow-xl hover:opacity-90 transition-opacity no-underline cursor-pointer"
+          >
             <MessageCircle className="w-7 h-7" />
-            <span className="text-xl">WhatsApp ID：+1(810)537-1355</span>
-          </div>
+            <span className="text-xl">WhatsApp ID: +852 5594 5272</span>
+          </a>
         </div>
-      </div>
-
+        
       {/* Zoomed Image Modal */}
       {zoomedImage && (
         <div 
