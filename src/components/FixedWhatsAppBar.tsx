@@ -19,11 +19,17 @@ export function FixedWhatsAppBar() {
           </div>
         </div>
         
-        {/* WhatsApp CTA Button */}
-        <div className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-3 px-6 rounded-xl shadow-md mt-3">
-          <span className="font-medium">WhatsApp ID：+1(810)537-1355</span>
+{/* WhatsApp CTA Button */}
+            <a
+            href="https://wa.me/85255945272"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-3 px-6 rounded-xl shadow-md mt-3 hover:opacity-90 transition-opacity no-underline"
+            >
+                <span className="font-medium">WhatsApp ID: +852 5594 5272</span>
+            </a>
         </div>
-      </div>
-    </div>
+    );
+};
   );
 }
