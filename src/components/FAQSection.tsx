@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, MessageCircle } from 'lucide-react';
+import { useWhatsAppLink } from '../lib/waLink';
 
 interface FAQItemProps {
   question: string;
@@ -32,6 +33,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
 }
 
 export function FAQSection() {
+  const wa = useWhatsAppLink('85257437376');
   const faqs = [
     {
       question: "I have zero experience. Can I do this?",
@@ -69,7 +71,7 @@ export function FAQSection() {
         {/* WhatsApp Button */}
         <div className="mb-10">
           <a
-            href="https://wa.me/85257437376"
+            href={wa.url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white py-4 px-6 rounded-2xl shadow-lg transition-all duration-200 hover:shadow-xl active:scale-95"
