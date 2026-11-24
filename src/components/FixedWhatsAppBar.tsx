@@ -1,10 +1,10 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
-import { formatPhone, useWhatsAppLink } from '../lib/waLink';
+import { useWhatsAppUrl } from '../lib/waLink';
 
 export function FixedWhatsAppBar() {
     const { t } = useLanguage();
-    const wa = useWhatsAppLink('85255945272');
+    const waUrl = useWhatsAppUrl();
 
     return (
         <div className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: '#1A73E8' }}>
@@ -23,12 +23,12 @@ export function FixedWhatsAppBar() {
 
                 {/* WhatsApp CTA Button */}
                 <a
-                    href={wa.url}
+                    href={waUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-3 px-6 rounded-xl shadow-md mt-3 hover:opacity-90 transition-opacity no-underline"
                 >
-                    <span className="font-medium">WhatsApp ID: {formatPhone(wa.phone)}</span>
+                    <span className="font-medium">WhatsApp</span>
                 </a>
             </div>
         </div>

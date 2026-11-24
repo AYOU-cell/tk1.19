@@ -52,8 +52,8 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
     'footer.contact': 'Contact Us',
-    'footer.copyright': '© 2025 EZ Entrepreneur Academy. All Rights Reserved.',
-    'footer.contact.info': 'Email: a2487806918@gmail.com  New York, USA',
+    'footer.copyright': '© 2020-2026 EZ Entrepreneur Academy. All Rights Reserved.',
+    'footer.contact.info': 'Email: support@ezecomacademy.com  New York, USA',
     
     // WhatsApp Bar
     'whatsapp.title': 'EZ Entrepreneur Academy',
@@ -100,8 +100,8 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.privacy': 'Datenschutzrichtlinie',
     'footer.terms': 'Nutzungsbedingungen',
     'footer.contact': 'Kontaktieren Sie uns',
-    'footer.copyright': '© 2025 EZ Entrepreneur Academy. Alle Rechte vorbehalten.',
-    'footer.contact.info': 'E-Mail: a2487806918@gmail.com  New York, USA',
+    'footer.copyright': '© 2020-2026 EZ Entrepreneur Academy. Alle Rechte vorbehalten.',
+    'footer.contact.info': 'E-Mail: support@ezecomacademy.com  New York, USA',
     
     // WhatsApp Bar
     'whatsapp.title': 'EZ Entrepreneur Academy',
@@ -148,8 +148,8 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.privacy': 'Política de Privacidad',
     'footer.terms': 'Términos de Servicio',
     'footer.contact': 'Contáctanos',
-    'footer.copyright': '© 2025 EZ Entrepreneur Academy. Todos los Derechos Reservados.',
-    'footer.contact.info': 'Email: a2487806918@gmail.com  Nueva York, EE.UU.',
+    'footer.copyright': '© 2020-2026 EZ Entrepreneur Academy. Todos los Derechos Reservados.',
+    'footer.contact.info': 'Email: support@ezecomacademy.com  Nueva York, EE.UU.',
     
     // WhatsApp Bar
     'whatsapp.title': 'EZ Entrepreneur Academy',
@@ -196,8 +196,8 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.privacy': 'Política de Privacidade',
     'footer.terms': 'Termos de Serviço',
     'footer.contact': 'Entre em Contato',
-    'footer.copyright': '© 2025 EZ Entrepreneur Academy. Todos os Direitos Reservados.',
-    'footer.contact.info': 'Email: a2487806918@gmail.com  Nova York, EUA',
+    'footer.copyright': '© 2020-2026 EZ Entrepreneur Academy. Todos os Direitos Reservados.',
+    'footer.contact.info': 'Email: support@ezecomacademy.com  Nova York, EUA',
     
     // WhatsApp Bar
     'whatsapp.title': 'EZ Entrepreneur Academy',
@@ -244,8 +244,8 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.privacy': 'Politique de Confidentialité',
     'footer.terms': 'Conditions d\'Utilisation',
     'footer.contact': 'Nous Contacter',
-    'footer.copyright': '© 2025 EZ Entrepreneur Academy. Tous Droits Réservés.',
-    'footer.contact.info': 'Email : a2487806918@gmail.com  New York, États-Unis',
+    'footer.copyright': '© 2020-2026 EZ Entrepreneur Academy. Tous Droits Réservés.',
+    'footer.contact.info': 'Email : support@ezecomacademy.com  New York, États-Unis',
     
     // WhatsApp Bar
     'whatsapp.title': 'EZ Entrepreneur Academy',

@@ -1,8 +1,8 @@
 import { Check, Zap, MessageCircle } from 'lucide-react';
-import { useWhatsAppLink } from '../lib/waLink';
+import { useWhatsAppUrl } from '../lib/waLink';
 
 export function CooperationModels() {
-  const wa = useWhatsAppLink('85257437376');
+  const waUrl = useWhatsAppUrl();
   return (
     <section className="bg-white px-5 py-16">
       <div className="max-w-md mx-auto">
@@ -175,7 +175,7 @@ export function CooperationModels() {
         {/* WhatsApp Button */}
         <div className="mt-10">
           <a
-            href={wa.url}
+            href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white py-4 px-6 rounded-2xl shadow-lg transition-all duration-200 hover:shadow-xl active:scale-95"

@@ -2,11 +2,11 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import portraitImage from 'figma:asset/a2edbe24bbc5a0658ee8c3d1cca64b073afb87a3.png';
 import { useLanguage } from '../contexts/LanguageContext';
-import { formatPhone, useWhatsAppLink } from '../lib/waLink';
+import { useWhatsAppUrl } from '../lib/waLink';
 
 export function HeroSection() {
   const { t } = useLanguage();
-  const wa = useWhatsAppLink('85255945272');
+  const waUrl = useWhatsAppUrl();
   
   return (
     <section className="relative bg-gradient-to-br from-[#F8F9FE] via-[#FFF5F8] to-[#F3F7FB] px-5 py-16 overflow-hidden">
@@ -83,13 +83,13 @@ export function HeroSection() {
 {/* WhatsApp CTA Button */}
         <div className="mb-6">
           <a
-            href={wa.url}
+            href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-5 px-8 rounded-2xl shadow-xl hover:opacity-90 transition-opacity no-underline cursor-pointer"
           >
             <MessageCircle className="w-7 h-7" />
-            <span className="text-xl">WhatsApp ID: {formatPhone(wa.phone)}</span>
+            <span className="text-xl">WhatsApp</span>
           </a>
         </div>
       </div>

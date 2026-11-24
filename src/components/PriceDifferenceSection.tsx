@@ -3,11 +3,11 @@ import { useState } from 'react';
 import chinaPriceImg from 'figma:asset/f8e9dd9a821bfc2b0ae8b8abcb23ab779c290e38.png';
 import europePriceImg from 'figma:asset/7db8aba9206574064be23356715420f6ee23662c.png';
 import { useLanguage } from '../contexts/LanguageContext';
-import { formatPhone, useWhatsAppLink } from '../lib/waLink';
+import { useWhatsAppUrl } from '../lib/waLink';
 
 export function PriceDifferenceSection() {
   const { t } = useLanguage();
-  const wa = useWhatsAppLink('85255945272');
+  const waUrl = useWhatsAppUrl();
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
   return (
@@ -81,13 +81,13 @@ export function PriceDifferenceSection() {
         {/* WhatsApp CTA Button */}
         <div>
           <a
-            href={wa.url}
+            href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-5 px-8 rounded-2xl shadow-xl hover:opacity-90 transition-opacity no-underline cursor-pointer"
           >
             <MessageCircle className="w-7 h-7" />
-            <span className="text-xl">WhatsApp ID: {formatPhone(wa.phone)}</span>
+            <span className="text-xl">WhatsApp</span>
           </a>
         </div>
       </div> {/* ← 补上了原本缺失的这个关键 div 闭合标签 */}

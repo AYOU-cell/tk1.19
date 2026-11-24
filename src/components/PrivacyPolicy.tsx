@@ -280,7 +280,7 @@ export function PrivacyPolicy() {
         {/* Footer */}
         <footer className="pt-6 border-t border-gray-300">
           <p style={{ fontSize: '14px', color: '#595959', lineHeight: '1.5', textAlign: 'center' }}>
-            © 2025 EZ Entrepreneur Academy. All rights reserved.
+            © 2020-2026 EZ Entrepreneur Academy. All rights reserved.
           </p>
         </footer>
       </div>

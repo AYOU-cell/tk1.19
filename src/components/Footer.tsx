@@ -1,9 +1,9 @@
 import { useLanguage } from '../contexts/LanguageContext';
-import { useWhatsAppLink } from '../lib/waLink';
+import { useWhatsAppUrl } from '../lib/waLink';
 
 export function Footer() {
   const { t } = useLanguage();
-  const wa = useWhatsAppLink('18105371355');
+  const waUrl = useWhatsAppUrl();
 
   return (
     <footer className="bg-[#F8F9FA] border-t border-gray-200 px-5 py-12">
@@ -20,7 +20,7 @@ export function Footer() {
           </a>
           <span className="text-gray-400">|</span>
           <a 
-            href={wa.url}
+            href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#1A73E8] transition-colors"
